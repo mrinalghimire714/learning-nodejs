@@ -1,0 +1,7 @@
+services:
+  app:
+    image: mrinalghimire714/learning-nodejs:latest
+    container_name: learning-nodejs
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
