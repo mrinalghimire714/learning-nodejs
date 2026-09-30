@@ -36,6 +36,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
@@ -43,5 +46,5 @@ jobs:
           push: true
           tags: |
             mrinalghimire714/learning-nodejs:latest
-            mrinalghimire14/learning-nodejs:${{ github.sha }}
+            mrinalghimire714/learning-nodejs:${{ github.sha }}
             mrinalghimire714/learning-nodejs:${{ github.run_number }}
