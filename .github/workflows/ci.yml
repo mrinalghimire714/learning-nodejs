@@ -43,5 +43,5 @@ jobs:
           push: true
           tags: |
             mrinalghimire714/learning-nodejs:latest
-            mrinalghimire14/learning-nodejs:${{ github.sha }}
-            mrinalghimire71/learning-nodejs:${{ github.run_number }}
+            mrinalghimire714/learning-nodejs:${{ github.sha }}
+            mrinalghimire714/learning-nodejs:${{ github.run_number }}
